@@ -1,6 +1,6 @@
 {
   "name": "alireaza/dot-env-resolver-commands",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "library",
   "license": "MIT",
   "description": "This is Commands Resolver package for DotEnv.",
@@ -22,7 +22,7 @@
   ],
   "require": {
     "php": "^8.0.0",
-    "alireaza/dot-env": "1.0.0",
+    "alireaza/dot-env": "1.1.0",
     "symfony/process": "v5.3.7"
   },
   "require-dev": {

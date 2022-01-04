@@ -27,7 +27,7 @@ class Commands
             (?P<backslashes>\\\\*)               # escaped with a backslash?
             \$
             (?P<opening_parenthesis>\()          # require opening parenthesis
-            (?P<cmd>(?i:[A-Z][A-Z0-9_]*+))?      # cmd
+            (?P<cmd>(.*))                        # cmd
             (?P<closing_parenthesis>\))          # require closing parenthesis
         /x';
 
