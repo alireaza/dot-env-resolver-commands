@@ -6,19 +6,8 @@ use LogicException;
 use Symfony\Component\Process\Exception\ExceptionInterface as ProcessException;
 use Symfony\Component\Process\Process;
 
-/**
- * Class Commands
- *
- * @package AliReaza\DotEnv\Resolver
- */
 class Commands
 {
-    /**
-     * @param string $data
-     * @param array  $env
-     *
-     * @return string
-     */
     public function __invoke(string $data, array $env): string
     {
         if (str_contains($data, '$')) {

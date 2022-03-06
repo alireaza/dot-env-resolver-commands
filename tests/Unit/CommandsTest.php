@@ -26,6 +26,10 @@ class CommandsTest extends TestCase
 
         rmdir($tmpdir);
 
-        $this->assertTrue(is_array($env->toArray()) && $env->has('FOO') && $env->get('FOO') === date('Y-m-d'));
+        $this->assertIsArray($env->toArray());
+
+        $this->assertSame(true, $env->has('FOO'));
+
+        $this->assertSame(date('Y-m-d'), $env->get('FOO'));
     }
 }
